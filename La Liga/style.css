@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+main {
+    width: 100%;
+    height: 100%;
+    border: 10px solid grey;
+    padding: 20px 35px;
+}
+
+/* Usamos las clases */
+.main-nav{
+    margin-top:10px; /* Espaciado exterior superior */
+    list-style: none; /* Le quitamos los estilos a la lista */
+    padding-left:10px; /* Espaciado interno izquierdo */    
+    background-color: #94f107; /* Color de fondo para el elemento */
+}
+
+.main-nav_item{
+    display: inline-block; /* Hacemos que pasen de vertical a horizontal */
+}
+.atp-sub-nav {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    background-color: rgba(255,255,255,.9);
+    display: block;
+    line-height: 1;
+}
+.main-nav_item a{ /* Modificamos todos las etiquetas <a> que esten dentro de la clase especificada */
+    color: #000000; /* Cambiamos el color de la letra a blanco */
+    padding: 5px; /* Hacemos un espaciado interior general(superior, inferior, derecho y izquierdo) de 5 pixeles */
+    border-radius: 2px; /* Hacemos un borde redondeando de 2 pixeles al elemento */
+    text-decoration: none; /* Le quitamos las decoraciones al texto de la etiqueta <a> */
+}
+p{
+    color: blue;
+    font-size: 30px;
+}
+.main-nav_item a:hover{ /* Con etiqueta:hover hacemos que cada vez que el usuario pase el cursor
+    por el elemento se le apliquen los siguientes estilos CSS */
+    color: #0000FF; /* Hacemos que el color de la fuente sea de color azul */
+}
+
+.main-nav_item a:active{ /* Con etiqueta:active hacemos que cada vez que el usuario haga click sobre el elemento
+    se le apliquen los siguientes estilos CSS */
+    color: #FF0000; /* Hacemps que el color de la fuente sea de color azul */
+}
+
+/* Pseudo clases y Pseudo elementos */
+.main-nav_item a::after{ /* Con after agregamos cierto contenido despues de la etiqueta especificada */
+    content : " | "; /* con content : "contenido" agregamos el contenido que queremos mostrar */  
+}
+/* class */
+.parrafo {
+    color: red;
+}
+
+/* ID */
+#texto {
+    color: yellow;
+}
+body{
+    background-color: #efeff1;
+}
